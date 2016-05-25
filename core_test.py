@@ -48,7 +48,7 @@ def test_process_3():
 def main():
     print current_process().name, 'starting'
     
-    functionQueue.put((fast_loop,))
+#    functionQueue.put((fast_loop,))
 #    Queue_2.put((fast_loop,))
 #    Queue_3.put((fast_loop,))
 
@@ -58,7 +58,7 @@ def main():
         
 
 if __name__ == '__main__':
-    # comment out main and uncomment the following line to enable multi-core operation
+    # comment out main() and uncomment the following line to enable multiprocess operation
     main()
  #   p1 = Process(name = "Main", target=main,).start()
 
