@@ -1,0 +1,14 @@
+[Unit]
+Description=multiprocess test
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/multi-core-python/core_test.py
+WorkingDirectory=/home/pi/multi-core-python
+User=pi
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
